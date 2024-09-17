@@ -6,9 +6,11 @@ import { useEffect, useState } from "react";
 
 export const Dashboard = () => {
   const [tasks, setTasks] = useState([]);
+  
   const addTask = task => {
     setTasks([...tasks, task]);
   } 
+
   useEffect(() => {
     axios
     .get("http://localhost:3004/tasks")
@@ -21,6 +23,7 @@ export const Dashboard = () => {
   const handleDelete = (id) => {
     setTasks (tasks.filter(task => task.id != id))
   }
+
   const statusUpdate = (id, status) => {
     axios
     .patch("http://localhost:3004/tasks/" + id, {tasks})

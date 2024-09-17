@@ -1,0 +1,17 @@
+@import url("../styles/reset.css");
+
+.list{
+    display: grid;
+    flex-flow: row wrap;
+    row-gap: 20px;
+    column-gap: 20px;
+    grid-template-columns: repeat(5, 1fr);
+    margin: 14px 51px 0 51px;
+}
+
+@media (max-width: 768px) {
+    .list {
+        grid-template-columns: repeat(4, 1fr);
+        margin: 14px 25px 0 25px;
+    }
+}

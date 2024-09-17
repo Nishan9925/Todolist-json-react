@@ -1,32 +1,99 @@
-body{
-  background:rgb(46, 46, 46);
-  font-family: sans-serif;  
-}
-.dashboard{
-  width:80%;
-  margin: 70px auto;
-  padding:2rem;
-  background-color: white;
-  min-height: 80vh;
-}
-.row{
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap');
+
+.website {
+  width: 100%;
+  background-color: #E6E6E6;
   display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.form-container {
+  width: 100%;
+  background-color: #FFFFFF;
+  padding: 18px 0 12px 0;
+  display: flex;
+  justify-content: center;
+}
+
+.form{
+  margin-bottom: 40px;
+  width: 28%;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  border-radius: 25px;
+  min-width: 28%;
+}
+
+.form-input {
+  border-radius: 25px;
+  width: 100%;
+  background-color: #E6E6E6;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 20px;
+}
+
+@media (min-width: 768px) {
+  .form{
+    width: 28%;
+  }
+}
+
+@media (min-width: 500px){
+  .form {
+    width: 28%;
+  }
+}
+
+.form-btn {
+  height: 40px;
+  border-radius: 25px;
+  cursor: pointer;
+  background-color: #0008C1;
+  color: #FFFFFF;
+  border: none;
+  outline: none;
+}
+
+.jewelry-data {
+  display: flex;
+  flex-flow: column;
+  padding: 10px;
+  background-color: #FFFFFF;
+  border-radius: 5px 5px 5px 5px;
   justify-content: space-between;
 }
-.list{
+
+.jewelry-img {
+  flex: 1;
+  border-radius: 5px 5px 0 0;
+}
+
+.jewelry-texts {
   display: flex;
-  flex-wrap: wrap;
-  gap:50px;
+  flex-flow: row no-wrap;
+  justify-content: space-between;
+  padding: 0 2px 0 2px;
+  margin: 16px 0 14px 0;
 }
-.list div{
-  width: 200px;
-  height: 200px;
-  background-color: whitesmoke;
-  padding:10px;
+
+.jewelery-texts-name {
+  color: #2E2E2E;
+  line-height: 18px;
+  font-size: 20px;
+  font-weight: 500;
+  font-family: Montserrat;
+  text-align: left;
 }
-.list img{
-  display: block;
-  margin-top:30px;
-  width: 40px;
-  height: 40px;
+
+.jewelery-texts-price {
+  font-family: Montserrat;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 17.07px;
+  text-align: left;
+
 }
