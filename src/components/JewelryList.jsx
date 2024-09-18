@@ -1,7 +1,7 @@
 import { Jewelry } from "./Jewelry";
 import "../assets/styles/JewelryList.css";
 
-export const JewelryList = ( {jewelries} ) => {
+export const JewelryList = ( { jewelries } ) => {
     return (
         <>
         <div className="list">
